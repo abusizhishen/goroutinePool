@@ -8,6 +8,6 @@ func (g *Goroutine) Do(fun func()) {
 	fun()
 }
 
-//可能有一些资源回收相关的
+//关闭协程池时可能有一些资源回收相关的
 func (g *Goroutine)close()  {}
 

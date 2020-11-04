@@ -16,7 +16,6 @@ func (p *Pool)Get()*Goroutine  {
 //协程用完放回
 func (p *Pool)Put(g *Goroutine)  {
 	p.active--
-	g.close()
 	p.ch <- g
 }
 
